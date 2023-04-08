@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학과 선택</title>
+  <link rel="stylesheet" href="/css/practice.css">
+</head>
+<body>
+  <form name="school">  
+    <fieldset>
+      <legend>전공</legend>
+      <div>
+        <img src="/images/book.png">
+        <img src="/images/pf2.png">
+      <div id="input">
+        <input type="text" id="number" placeholder="학번">
+        <input type="text" id="id" placeholder="이름">
+      </div>
+      <div>
+        <label>학과</label>
+        <select name="major" id="major">
+        <option>---학과 선택---</option>
+        <option value="archi">건축 공학과</option>  
+        <option value="mechanic">기계 공학과</option>
+        <option value="indust">산업 공학과</option>
+        <option value="elec">전기전자 공학과</option> 
+        <option value="computer">컴퓨터 공학과</option>
+        <option value="chemical">화학 공학과</option>
+        </select>
+      </div>
+      <div>
+        <button>선택 완료</button>
+      </div>
+    </fieldset>
+  </form>
+  <script src="/js/practice.js"></script>
+</body>
+</html>
