@@ -1,0 +1,38 @@
+.profile {
+  display: block;
+  margin : auto
+}
+
+.button {
+  display: block;
+  margin : auto
+}
+
+.title {
+  text-align: center;
+}
+
+.color {
+  color: darkblue;
+}
+
+.box {
+  background-color: cadetblue;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 30px;
+  border: 2px solid tomato;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 7px 7px  black;
+}
+
+p {
+  color: white;
+}
+
+body {
+  background-color: darkorchid;
+}
