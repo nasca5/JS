@@ -1,0 +1,136 @@
+html {
+  filter: brightness(70%);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(/project/images/background.jpg);
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  color: white;
+  position: relative;
+}
+
+.main-title {
+  margin-top: 100px;
+}
+
+.main-background>a:link {
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.main-background>a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.main-background>a:visited {
+  color: aqua;
+  text-decoration: none;
+}
+
+.main-button {
+  background-color: bisque;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border:  none;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 3px 3px black;
+  z-index: 2;
+}
+
+.main-button>a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.main-button>a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+
+.main-button>a:visited {
+  text-decoration: none;
+  color: blue;
+}
+.main-content {
+  color: black;
+  background-color: #eee;
+  position: relative;
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  top: -30px;
+  max-width: 600px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.input {
+  float: left;
+}
+
+input {
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0;
+  background-color: aquamarine;
+  display: block;
+  height: 37px;
+}
+
+input:hover {
+  background-color: blueviolet;
+}
+
+.login-form {
+  width: 40%;
+  height: 100px;
+  background-color: cornflowerblue;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+  bottom: 10px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.login-bttn {
+  background-color: bisque;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  float: left;
+  margin-left: 25px;
+  height: 100%;
+}
+
+.login-bttn:hover {
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  float: left;
+  margin-left: 25px;
+  height: 100%;
+}

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+div, textarea, input {
+  box-sizing: border-box;
+}
+
+div {
+  padding: 10px;
+}
+
+p, label {
+  font-weight: bold;
+}
+
+button {
+  float: right;
+}
+
+.input {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.form-background {
+  background-color: black;
+}
+
+.form-white {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 600px;
+}
+
+.float {
+  float: left;
+}
