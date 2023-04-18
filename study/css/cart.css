@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+table {
+  background-color: #eee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+}
+
+tr {
+  border: 2px solid aquamarine;
+}
+
+th, td {
+  padding-right: 20px;
+  text-align: right;
+  height: 50px;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100px;
+  float: left;
+}
+a {
+  color: violet;
+}
+
+.item {
+  width: 250px;
+}
+
+.box {
+  background-color: aquamarine;
+  width: 100%;
+  padding: 30px;
+}
+
+.bttn {
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  color: #eee;
+  background-color: darkblue;
+}
+
+.bttn:hover {
+  background-color: black;
+}
+
+.aqua {
+  background-color: aquamarine;
+}
+
+.left {
+  text-align: left;
+}

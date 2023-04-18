@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  background-color: aquamarine;
+  padding: 30px;
+}
+
+.box {
+  width: 50%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.cart {
+  width: 100%;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+td {
+  border-bottom: 2px solid aquamarine;
+  padding: 10px;
+}
+
+img {
+  width: 100px;
+}
+
+thead td:nth-child(1), td:nth-child(2){
+  width: 30%;
+}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: cyan;
+  float: right;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+strong {
+  font-size: larger;
+}
