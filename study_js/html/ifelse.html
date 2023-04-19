@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/study_js/css/ifelse.css">
+  <title>ifelse</title>
+</head>
+<body>
+  
+
+  <script>
+    function threeSixNine(input) {
+      if((input % 10) % 3 == 0) {
+        console.log('박수');
+      }
+      else
+        console.log('통과');
+    }
+
+    function passorfail(score1, score2) {
+      if(score1 < 40 || score2 < 40) {
+        console.log('불합격');
+      }
+      else if(score1 + score2 >= 120) {
+        console.log('합격');
+      }
+      else {
+        console.log('불합격');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -10,6 +10,13 @@
   <title>study</title>
 </head>
 <body>
+  <div class="nav">
+    <span class="nav-title">응애쇼핑</span>
+    <span class="nav-dark">Light 🔄</span>
+    <button class="nav-toggler">
+      <img src="/images/OpenAI.png" alt="못 보여줌 ㅈㅅ">
+    </button>
+  </div>
   <div class="main-bg">
     <h4>Shirts on Sale!</h4>
     <button type="button" class="btn btn-primary login">login</button>
@@ -48,13 +55,34 @@
 
 
   <script>
+    var cnt = 0;
+
+    $('.nav-toggler').on('click', () => {
+      cnt++;
+      if((cnt % 2) == 1) {
+        $('.nav-dark').toggleClass('whit-bg')
+        $('body').toggleClass('dark-bg')
+        $('.nav-dark').html('Light 🔄');
+      }
+      else {
+        $('.nav-dark').toggleClass('whit-bg')
+        $('body').toggleClass('dark-bg')
+        $('.nav-dark').html('Dark 🔄');
+      }
+    });
+
+    document.getElementById('exampleInputEmail1').addEventListener('change', () => {
+      console.log('안녕');
+    });
     $('.login').on('click', function() {
-      $('.main-bg').css('opacity', '0');
-      $('.black-bg').addClass('show');
+      $('.nav').toggleClass('hide');
+      $('.main-bg').toggleClass('hide');
+      $('.black-bg').toggleClass('show');
     })
 
     $('.btn-danger').on('click', function() {
-      $('.main-bg').css('opacity', '1');
+      $('.nav').toggleClass('hide');
+      $('.main-bg').toggleClass('hide');
       $('.black-bg').toggleClass('show');
     })
 
