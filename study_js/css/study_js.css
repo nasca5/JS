@@ -89,15 +89,19 @@ img {
 
 .dark-bg {
   color: white;
-  background-color: black;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .whit-bg {
-  color: black;
+  color: rgba(0,0,0,0.5);
   background-color: white;
 }
 
 form {
   max-width: 600px;
   margin: auto;
+}
+
+.login-btn {
+  float: left;
 }
