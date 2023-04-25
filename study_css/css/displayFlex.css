@@ -1,35 +1,27 @@
-.flexItem {
-  width: 200px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
 .flexContainer {
-  display: flex;
   height: 100px;
   background-color: indianred;
   text-align: center;
-  align-items: center;
-  height: 100px;
+}
+
+.flexItem {
+  float: left;
+  width: 200px;
+  line-height: 100px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .size {
   font-size: 50px;
 }
 
-.test {
-  width: 100vw;
-  height: 15vh;
-  background: grey;
-}
-
 @media screen and (max-width: 1200px) {
   .flexItem {
     font-size: 20px;
   }
+}
+
+.right {
+  float: right;
 }

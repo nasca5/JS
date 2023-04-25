@@ -1,0 +1,44 @@
+div {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: bisque;
+  border: none;
+}
+
+button:hover {
+  cursor: grab;
+}
+
+.container {
+  height: 150px;
+  padding: 50px;
+  display: flex;
+  background-color: aqua;
+}
+
+.containerBox {
+  text-align: center;
+  background-color: bisque;
+  margin: 20px;
+  border-radius: 200px;
+  line-height: 120px;
+  width: 200px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.s20 {
+  font-size: 20px;
+}
+
+.s50 {
+  font-size: 30px;
+}
