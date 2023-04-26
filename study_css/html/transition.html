@@ -1,0 +1,59 @@
+<!--
+  one way 애니메이션 만들기
+
+  CSS로 애니메이션 만드는 방법
+  1. 시작 스타일 만들기
+  2. 최종 스타일 만들기
+  3. 언제 최종스타일로 만들지  pseudo-class 이용
+  4. transition으로 애니메이션 만들기
+
+  *transition-timing-function:cubic-bezier 속성을 이용하면 좀 더 생동감 있는 애니메이션을 만들 수 있음
+
+  *기타 팁들
+  
+  1.div 박스를 하단에 배치하고 싶을 때는 bottom 속성을 0으로 하면 된다. -> 이 방법은 부모 요소에 position:relation, 자식 요소에 position:absolute를 한 상태에서만 가능하다.
+  아니면 보통 margin-top을 줘서 아래로 내려도 된다.
+  2.overflow 속성을 주면 넘치는 내용을 숨길 수 있음
+  3.margin, padding, border 도 %로 설정할 수있음
+  
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/study_css/css/transition.css">
+  <link rel="stylesheet" href="/images/nomalize.css">
+  <title>transition</title>
+</head>
+<body>
+  <div class="shop-bg">
+    <div class="shop-container">
+      <div class="shop-item">
+        <div style="position:relative">
+          <div class="overlay">
+            <h1>$60</h1>
+            <p>현재 인기 상품</p>
+          </div> 
+          <img src="/images/istockphoto-1256423040-1024x1024.jpg" alt="">
+        </div>
+      </div>
+      <div class="shop-item">
+        <div style="position:relative">
+          <div class="overlay"></div>
+          <img src="/images/istockphoto-1256423040-1024x1024.jpg" alt="">
+        </div>
+      </div>
+      <div class="shop-item">
+        <div style="position:relative">
+          <div class="overlay"></div>
+          <img src="/images/istockphoto-1256423040-1024x1024.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
