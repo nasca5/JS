@@ -1,0 +1,155 @@
+body {
+  color : #eee
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0.1px;
+}
+
+.title {
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgb(69, 69, 236),rgb(54, 27, 128));
+}
+
+.title-content {
+  padding: 10%;
+}
+
+.bttn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #353232;
+  color: #eee;
+  transition: all 1s;
+}
+
+.bttn:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.title-content-image {
+  display: block;
+  float: right;
+  width: 30%;
+}
+
+.title-intro {
+  padding: 5%;
+  background-color: white;
+  text-align: center;
+}
+
+.title-info {
+  padding: 5%;
+}
+
+.title-info-icon {
+  margin: 0 20px;
+}
+
+.portfolio {
+  padding: 20px;
+}
+
+.screen-image {
+  padding: 20px;
+  width: 45%;
+  height: 400px;
+  transition: all 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.screen-image:hover {
+  transform: scale(0.9);
+}
+
+.black {
+  color: black;
+}
+
+.purple {
+  color: rgb(54, 27, 128);
+}
+
+.middle {
+  text-align: center;
+}
+
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  color: #eee;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(54, 27, 128);
+  transition: all 0.5s;
+}
+
+.icon-box:hover {
+  cursor: pointer;
+  background-color: darkslateblue;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  margin: auto;
+  width: 70px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+
+
+@media screen and (max-width : 768px) {
+  .title-content-image {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .title-content {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .title-content-bttn {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .screen {
+    display: block;
+    margin: auto;
+  }
+
+  .screen-image {
+    width: 100%;
+    margin: auto;
+  }
+}
