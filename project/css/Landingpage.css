@@ -63,6 +63,7 @@ h1 {
 }
 
 .screen-image {
+  padding: 50px;
   position: relative;
   width: 50%;
   height: 400px;
@@ -72,15 +73,11 @@ h1 {
   background-size: cover;
 }
 
-.screen-image>p,h3 {
-  margin-top: 70px;
-  margin-left: 70px;
-}
-
 .whitebox {
   position: absolute;
   border: 0px solid white;
-
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
   transition: all 1s;
