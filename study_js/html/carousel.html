@@ -1,0 +1,87 @@
+<!-- 
+  carousel 이미지 슬라이드 이벤트 만들기
+  one-way 애니메이션 만드는 규칙을 따르면 쉽게 만들 수 있음 -> CSS 공부글에 있음
+  여기서는 pseudo-class보다는 JS를 이용해서 이벤트를 줘본다.
+
+  width :vw -> 브라우저폭 기준으로 
+  height : vh -> 브라우저 높이 기준으로
+  transform 속성 -> 애니메이션 만들 때 margin이나 right, left 속성으로 애니메이션을 주는 것보다 더 쉽고 편함.
+  
+  *carousel 이미지 슬라이딩 애니메이션 만들 때 transform 속성 이용시 버튼을 클릭하면 해당 그림이 보여지게 되는 translateX 값을 지정해주면 됨.
+  이벤트리스너로 스타일 속성 주는 거임 그만큼 추가로 이동해달라는 뜻이 아님에 주의하자.
+  
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/images/nomalize.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .slide {
+      overflow: hidden;
+
+    }
+
+    .container {
+      transition: all 1s;
+      width: 300vw;
+    }
+
+    .container-box {
+      float: left;
+      width: 100vw;
+    }
+
+    .container-box img {
+      width: 100%;
+    }
+
+    .btn {
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: black;
+      color: #eee;
+      transition: all 1s;
+    }
+
+    .btn:hover {
+      background-color: darkolivegreen;
+      cursor: grabbing;
+    }
+
+
+  </style>
+  <title>Carousel</title>
+</head>
+<body>
+  <div class="slide">
+    <div class="container">
+      <div class="container-box">
+        <img src="/images/portfolio-1.jpg" alt="">
+      </div>
+      <div class="container-box">
+        <img src="/images/portfolio-2.jpg" alt="">
+      </div>
+      <div class="container-box">
+        <img src="/images/portfolio-3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <button class="btn prev" style="margin: 0 50px;">이전</button>
+    <button class="btn btn1">1</button>
+    <button class="btn btn2">2</button>
+    <button class="btn btn3">3</button>
+    <button class="btn next" style="margin: 0 50px;">다음</button>
+  </div>
+  <script src="/study_js/js/carousel.js"></script>
+</body>
+</html>
