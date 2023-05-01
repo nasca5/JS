@@ -1,5 +1,10 @@
 {
     "editor.tabSize": 2,
     "editor.linkedEditing": true,
-    "editor.fontFamily": "D2Coding, Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "D2Coding, Consolas, 'Courier New', monospace",
+    "eslint.validate": [ "html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "eslint.alwaysShowStatus": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
 }

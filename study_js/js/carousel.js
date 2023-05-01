@@ -22,7 +22,7 @@ btn3.addEventListener('click', () => {
   absPosX = 3;
 });
 
-let max = 3;
+const max = 3;
 
 // prev.addEventListener('click', () => {
 //   if(absPosX == 1) {
@@ -40,7 +40,7 @@ let max = 3;
 // });
 
 prev.addEventListener('click', () => {
-  if(absPosX != 1) {
+  if(absPosX !== 1) {
     box.style.transform = 'translateX(-' + (absPosX-2)*100 + 'vw)';
     absPosX -= 1;
   }
@@ -51,7 +51,7 @@ prev.addEventListener('click', () => {
 });
 
 next.addEventListener('click', () => {
-  if(absPosX != max) {
+  if(absPosX !== max) {
     box.style.transform = 'translateX(-' + absPosX*100 + 'vw)';
     absPosX += 1;
   }
