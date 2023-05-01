@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+.circle {
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.mobile {
+  border-right: 1px solid grey;
+}
+.text-center p {
+  color: #6fbaf8;
+}
+
+.hidden {
+  display: block;
+}
+
+.size {
+  font-size: xx-small;
+}
+
+@media screen and (max-width : 768px) {
+  .mobile {
+    border: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

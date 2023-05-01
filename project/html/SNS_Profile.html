@@ -1,0 +1,123 @@
+<!-- 
+  웹 사이트 만들기 순서
+  1. 먼저 큰 틀을 짠다.
+  2. 각 틀에 들어갈 디자인을 짠다.
+  3. 반응형 디자인을 짠다.
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/images/nomalize.css">
+    <link rel="stylesheet" href="/project/css/SNS_Profile.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row p-5 bg-white rounded" >
+        <div class="col-6 col-md-2 pt-2">
+          <img src="/images/portfolio-2.jpg" class="rounded w-100 h-100">
+        </div>
+        <div class="col-6 col-md-6 mobile pt-4 mobile">
+          <h4 class="mb-0">Hyun sung Kang</h4>
+          <p class="mb-0">Full-stack Engineer</p>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>대전광역시</span>
+          <div>
+            <button type="button" class="btn btn-primary mt-1 ps-4 pe-4">Contact</button>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 pt-3">
+          <p class="fw-bold">Location</p>
+          <p class="fw-bold">Age</p>
+          <p class="fw-bold">Experience</p>
+          <p class="fw-bold">School</p>
+        </div>
+        <div class="col-6 col-md-2 pt-3">
+          <p>대전광역시</p>
+          <p>26</p>
+          <p>신입</p>
+          <p>컴퓨터공학과</p>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-2 col-md-1 border-bottom border-primary text-center">
+          <p>Profile</p>
+        </div>
+        <div class="col-10 col-md-11 border-bottom border-black"></div>
+      </div>
+      <div class="row" style="height:75vh">
+        <div class="col-md-3 bg-white rounded-3 h-50 m-2 p-3">
+          <h4 class="mb-4">WORKS</h4>
+          <p class="mb-1">Landing page design</p>
+          <p class="mb-1">Flyer design</p>
+          <p class="mb-1">Vue.js to-do app</p>
+          <p class="mb-1">Shopping page design</p>
+        </div>
+        <div class="col-md-6 bg-white rounded-3 h-75 m-2 p-3">
+          <div class="h-50">
+            <h4 class="mb-4">ABOUT</h4>
+            <p>I am a Full-stack designer who is excellent at Bootstrap. Sass, Foundation.
+              I have dealt lots of in-house design works and outsource things. if you want to check my portfolio, 
+              please visit Hyunsung Kang's Github</p>
+          </div>
+          <div class="border-top pt-3">
+            <h4 class="mb-4">SKILLS</h4>
+            <button type="button" class="btn btn-outline-secondary rounded-4">HTML5</button>
+            <button type="button" class="btn btn-outline-secondary rounded-4">JavaScript</button>
+            <button type="button" class="btn btn-outline-secondary rounded-4">CSS3</button>
+            <button type="button" class="btn btn-outline-secondary rounded-4">Python</button>
+            <button type="button" class="btn btn-outline-secondary rounded-4">C_Lang</button>
+          </div>
+        </div>
+        <div class="col-md-2 h-75 m-2 ">
+          <div class="text-center h-50 bg-white rounded-3 p-2">
+            <i class="fa-solid fa-dragon " style="font-size: 50px;"></i>
+            <p class="mt-3">Find me at Linkedout.com</p>
+            <button class="btn btn-primary">Sign Up</button>
+            <p class="mt-3">Already a member?</p>
+          </div>
+          <div class="hidden">
+            <div>
+              <p class="p-2 mt-2 border-bottom border-black h-50">People You Might Know</p>
+            </div>
+            <div class="w-100 d-flex">
+              <div class="w-25">
+                <img src="/images/portfolio-2.jpg" class="rounded w-75 h-75 m-1">
+              </div>
+              <div class="w-75 size">
+                <p class="mb-0">Hyun sung Kang</p>
+                <p class="mb-0">Full-stack Engineer</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>대전광역시</span>
+              </div>
+            </div>
+            <div class="w-100 d-flex mt-3">
+              <div class="w-25">
+                <img src="/images/portfolio-2.jpg" class="rounded w-75 h-75 m-1">
+              </div>
+              <div class="w-75 size">
+                <p class="mb-0">Hyun sung Kang</p>
+                <p class="mb-0">Full-stack Engineer</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>대전광역시</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
