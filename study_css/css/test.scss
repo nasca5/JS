@@ -1,0 +1,56 @@
+@use 'main';
+
+$mainColor: #2a4cb2;
+$fontColor: #eeeeee;
+$buttonColor: skyblue;
+
+.background {
+  background-color: $mainColor;
+}
+
+%btn {
+  width: 100px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+%btn:hover {
+  background-color: #2a4cb2;
+}
+
+.box {
+  p {
+    font-size: 30px;
+  }
+  color: $fontColor;
+}
+
+.btn-blue {
+  background-color: $buttonColor;
+  @extend %btn;
+}
+.btn-red {
+  @extend %btn;
+  background-color: red;
+}
+.btn-green {
+  @extend %btn;
+  background-color: green;
+}
+@mixin fontStyle($var, $var2) {
+  #{ $var2 }: -1px;
+  font-size: $var;
+}
+
+h2 {
+  @include fontStyle(40px, margin-top);
+}
+
+h3 {
+  @include fontStyle(30px, letter-spacing);
+}
+
+h4 {
+  @include fontStyle(20px, letter-spacing);
+}

@@ -6,7 +6,6 @@
 
 const bttn = $('.tab-button');
 const content = $('.tab-content');
-const count = bttn.length;
 
 // for (let i = 0; i < count; i++) {
 //   bttn.eq(i).on('click', () => {
@@ -17,6 +16,12 @@ const count = bttn.length;
 // document.querySelectorAll('.tab-button')[0]
 
 
+function tab(i) {
+  bttn.removeClass('orange');
+  bttn.eq(i).addClass('orange');
+  content.removeClass('show');
+  content.eq(i).addClass('show');
+}
 
 $('.list').click(e => {
   // if(e.target == bttn.eq(0)[0])
@@ -28,10 +33,3 @@ $('.list').click(e => {
   
   tab(e.target.dataset.id);
 })
-
-function tab(i) {
-  bttn.removeClass('orange');
-  bttn.eq(i).addClass('orange');
-  content.removeClass('show');
-  content.eq(i).addClass('show');
-}

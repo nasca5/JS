@@ -24,7 +24,7 @@ $('exampleInputEmail1').on('change', () => {
   console.log('안녕');
 });
 
-$('.login').on('click', (e) => {
+$('.login').on('click', () => {
   $('.nav').toggleClass('hide');
   $('.main-bg').toggleClass('hide');
   $('.black-bg').toggleClass('show');

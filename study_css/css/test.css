@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: #2a4cb2;
+}
+
+.btn-green, .btn-red, .btn-blue {
+  width: 100px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-green:hover, .btn-red:hover, .btn-blue:hover {
+  background-color: #2a4cb2;
+}
+
+.box {
+  color: #eeeeee;
+}
+.box p {
+  font-size: 30px;
+}
+
+.btn-blue {
+  background-color: skyblue;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+h2 {
+  margin-top: -1px;
+  font-size: 40px;
+}
+
+h3 {
+  letter-spacing: -1px;
+  font-size: 30px;
+}
+
+h4 {
+  letter-spacing: -1px;
+  font-size: 20px;
+}/*# sourceMappingURL=test.css.map */

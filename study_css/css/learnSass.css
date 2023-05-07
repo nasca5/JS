@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.container-list li:nth-child(1) {
+  background-color: blue;
+}
+
+.row {
+  width: 100vw;
+}
+
+.container-list {
+  padding: 0;
+  list-style: none;
+}
+.container-list-box {
+  font-size: 30px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.alert1 {
+  width: 90%;
+  padding: 20px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.alert2 {
+  width: 90%;
+  padding: 20px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.alert3 {
+  width: 90%;
+  padding: 20px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: orange;
+}
+
+.col-1 {
+  float: left;
+  width: 8.3333333333%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-2 {
+  float: left;
+  width: 16.6666666667%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-4 {
+  float: left;
+  width: 33.3333333333%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-5 {
+  float: left;
+  width: 41.6666666667%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-7 {
+  float: left;
+  width: 58.3333333333%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-8 {
+  float: left;
+  width: 66.6666666667%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-9 {
+  float: left;
+  width: 75%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-10 {
+  float: left;
+  width: 83.3333333333%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-11 {
+  float: left;
+  width: 91.6666666667%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.col-12 {
+  float: left;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    background-color: skyblue;
+  }
+}/*# sourceMappingURL=learnSass.css.map */

@@ -7,4 +7,6 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "codesnap.backgroundColor": "#abb8c3",
+    "codesnap.showWindowTitle": true,
 }

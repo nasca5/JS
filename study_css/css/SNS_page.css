@@ -1,0 +1,36 @@
+.pseudo::first-line {
+  color: red;
+  font-size: 30px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  background-color: skyblue;
+  border: none;
+}
+
+input[type=range] {
+  appearance: none;
+  background-color: skyblue;
+}
+input[type="range" i]::-webkit-slider-thumb {
+  appearance: none;
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+
+progress {
+  appearance: none;
+  width: 50vw;
+}
+
+progress::-webkit-progress-bar {
+  background: linear-gradient(to right, blue, pink);
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+}

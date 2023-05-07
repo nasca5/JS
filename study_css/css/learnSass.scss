@@ -1,0 +1,80 @@
+@use 'main';
+
+p {
+  margin: 0;
+}
+
+$borderColor : #eeeeee;
+$backgroundColor : skyblue;
+
+@mixin listStyle($var) {
+  font-size: 30px;
+  padding: 20px;
+  border: 1px solid $var;
+}
+
+@mixin backColor($var) {
+  width: 90%;
+  padding: 20px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: $var;
+}
+
+@mixin Col($var) {
+  float: left;
+  width: 100% / $var;
+  height: 50px;
+  padding: 10px;
+  background-color: $backgroundColor;
+}
+
+%active {
+  background-color: blue;
+}
+
+%Row {
+  width: 100vw;
+}
+
+.container-list {
+  li:nth-child(1) {
+    @extend %active;
+  }
+  padding: 0;
+  list-style: none;
+}
+
+.container-list-box {
+  @include listStyle($borderColor)
+}
+
+.alert1 {
+  @include backColor(green);
+}
+
+.alert2 {
+  @include backColor(skyblue);
+}
+
+.alert3 {
+  @include backColor(orange);
+}
+
+.row {
+  @extend %Row
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include Col(12 / $i)
+  }
+}
+
+
+
+@media screen and (min-width : 768px) {
+  .col-md-6 {
+    @include Col(12 / 6)
+  }
+}
