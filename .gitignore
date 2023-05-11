@@ -3,12 +3,7 @@ package-lock.json
 package.json
 .vscode
 images
-grammar.txt
-scroll.txt
 .eslintrc.json
 .prettierrc.json
 babel.config.json
-CSS_Tips.txt
-pseudo-element.txt
-usableLibrary.txt
-array&object.txt
+Tips/

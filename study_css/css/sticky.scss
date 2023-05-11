@@ -1,0 +1,24 @@
+@use 'main';
+
+body {
+  background-color: grey;
+  height: 3000px;
+}
+
+.grey {
+  background: lightgrey;
+  height: 2000px;
+  margin-top: 500px;
+}
+
+.image {
+  position: sticky;
+  top: 100px;
+  float: right;
+  width: 400px;;
+}
+
+.text {
+  float: left;
+  width: 300px;
+}

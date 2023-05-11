@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.box {
+  position: fixed;
+  z-index: -1;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hello {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.hello:hover {
+  animation-name: ani;
+  animation-duration: 1s;
+}
+
+.animation {
+  display: block;
+  margin: auto;
+}
+
+.animation:hover {
+  animation-name: ani2;
+  animation-duration: 1s;
+}
+
+.x-ani {
+  margin: auto;
+  width: 10vw;
+  text-align: center;
+  font-size: 50px;
+}
+
+.x-ani:hover {
+  animation-name: ani3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.slide {
+  float: left;
+  width: 60vw;
+  height: 100vh;
+  background-color: black;
+  transition: all 1s;
+  transform: translateX(-30vw);
+  z-index: 1;
+}
+.slide h1 {
+  text-align: right;
+  margin: 20px;
+  color: #eee;
+}
+.slide h4 {
+  color: #eee;
+}
+
+.slide:hover {
+  transform: translateX(0vw);
+}
+.slide:hover h1 {
+  text-align: center;
+}
+.slide:hover h4 {
+  text-align: center;
+  animation-name: ani4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-10px);
+  }
+  66% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes ani2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ani3 {
+  25% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5) translate(5px, -3px);
+  }
+}
+@keyframes ani4 {
+  50% {
+    transform: translateX(10vw) skew(10deg);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}/*# sourceMappingURL=transform.css.map */
