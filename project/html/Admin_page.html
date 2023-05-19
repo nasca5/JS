@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/images/nomalize.css">
+  <link rel="stylesheet" href="/project/css/Admin_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Admin_page</title>
+</head>
+<body>
+  <div class="box row">
+    <div class="slide col-1">
+      <div class="slide-icon">
+        <div>
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+          <span>Home</span>
+        </div>
+      </div>
+      <div class="slide-icon">
+        <div>
+          <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div>
+          <span>Services</span>
+        </div>
+      </div>
+      <div class="slide-icon">
+        <div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+        <div>
+          <span>Alerts</span>
+        </div>
+      </div>
+      <div class="slide-icon">
+        <div>
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <div>
+          <span>Stats</span>
+        </div>
+      </div>
+    </div>
+    <div class="container col-11">
+      <div class="container-navbar row">
+        <div class="container-navbar-search col-9">
+          <input type="search" placeholder="Search"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="container-navbar-alert col-3">
+          <button><i class="fa-solid fa-bell"></i></button>
+          <button><i class="fa-solid fa-envelope"></i></button>
+          <span>hs Kang</span>
+        </div>
+      </div>
+      <div class="container-box">
+        <h2>Dashboard</h2>
+        <div class="container-box-flex row">
+          <div class="row col-3">
+            <div class="col-10">
+              <p>Earnings (Monthly)</p>
+              <h4>$400,000</h4>
+            </div>
+            <i class="fa-solid fa-calendar"></i>
+          </div>
+          <div class="row col-3">
+            <div class="col-10">
+              <p>Earnings (Annual)</p>
+              <h4>$800,000</h4>
+            </div>
+            <i class="fa-solid fa-dollar-sign"></i>
+          </div>
+          <div class="row col-3">
+            <div class="col-10">
+              <p>Tasks</p>
+              <h4>13</h4>
+            </div>
+            <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="row col-3">
+            <div class="col-10">
+              <p>Requests</p>
+              <h4>26</h4>
+            </div>
+            <i class="fa-sharp fa-solid fa-comments"></i>
+          </div>
+        </div>
+        <div class="container-box-content row">
+          <div class="container-box-content-chart col-8">
+            <div>
+              <h4>Earnings Overview</h4>
+            </div>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="container-box-content-task col-4">
+            <div>
+              <h4>Tasks</h4>
+            </div>
+            <div>
+              <p>Borrowed Items</p>
+            </div>
+            <div>
+              <p>Trello Requests</p>
+            </div>
+            <div>
+              <p>Marked Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'black'],
+      datasets: [{
+        label: '# of Votes',
+        data: [0, 10, 5, 3, 20, 30, 45],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+  <script src="/project/js/Admin_page.js"></script>
+</body>
+</html>

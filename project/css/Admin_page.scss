@@ -1,0 +1,171 @@
+@use "../../study_css/css/main";
+@use "sass:math";
+
+$borderColor : darkgrey;
+$contentColor : #eee;
+$titleColor : white;
+
+@mixin col($var) {
+  width: 100% * math.div($var, 12);
+}
+
+@mixin box($var) {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  border-left: 3px solid $var;
+  background-color: $titleColor;
+  box-shadow: 1px 1px 2px 1px $borderColor;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include col($i)
+  }
+}
+
+body {
+  position: relative;
+}
+
+.row {
+  display: flex;
+}
+
+.slide {
+  width: 100% * math.div(4, 12);
+  transform: translateX(-75%);
+  transition: all 1s;
+  padding: 10px;
+  height: 100vh;
+  z-index: 1;
+  background-color: purple;
+}
+
+.slide:hover {
+  transform: translateX(0);
+  padding-left: 10px;
+}
+
+
+.container {
+  position: fixed;
+  left: 100% * math.div(1, 12);
+}
+.container-navbar-search {
+
+  input {
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    width: 30%;
+    transition: all 1s;
+  }
+
+  input:focus {
+    width: 60%;
+    border: 3px solid cornflowerblue;
+    outline: none;
+  }
+
+  button {
+    background-color: black;
+    border-radius: 5px;
+  }
+
+  i {
+    color: $titleColor;
+  }
+
+  padding: 10px;
+}
+
+.container-navbar-alert {
+  button {
+    background-color: $titleColor;
+    border: none;
+  }
+
+  padding: 10px;
+  text-align: right;
+}
+
+.container-box {
+  box-shadow: inset 1px 2px 2px $borderColor;
+  padding: 10px;
+  background-color: $contentColor;
+}
+
+.container-box-flex {
+  >div {
+    padding: 10px;
+    align-items: center;
+    
+    i {
+      font-size: 30px;
+    }
+  }
+  >div:nth-child(1) {
+    @include box(cornflowerblue);
+    margin-left: 0px;
+  }
+  >div:nth-child(2) {
+    @include box(green);
+  }
+  >div:nth-child(3) {
+    @include box(blue);
+  }
+  >div:nth-child(4) {
+    @include box(orange);
+    margin-right: 0px;
+  }
+}
+
+.container-box-content-chart {
+  >div:nth-child(1) {
+    h4 {
+      margin: 0px;
+    }
+
+    border-bottom: 1px solid $borderColor;
+    padding: 10px;
+    background-color: $contentColor;
+  }
+
+  >div:nth-child(2) {
+    background-color: $titleColor;
+  }
+
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px $borderColor;
+}
+
+.container-box-content-task {
+  >div {
+    padding: 1px;
+    padding-left: 10px;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  >div:nth-child(1) {
+    h4 {
+      margin: 9px;
+    }
+    background-color: $contentColor;
+  }
+  >div:nth-child(2) {
+    background-color: $titleColor;
+  }
+  >div:nth-child(3) {
+    background-color: $titleColor;
+  }
+  >div:nth-child(4) {
+    background-color: $titleColor;
+  }
+  
+  height: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px $borderColor;
+}
