@@ -10,7 +10,6 @@ $titleColor : white;
 }
 
 @mixin box($var) {
-  margin: 10px;
   border: none;
   border-radius: 5px;
   border-left: 3px solid $var;
@@ -24,7 +23,8 @@ $titleColor : white;
   }
 }
 
-body {
+.box {
+  height: 100vh;
   position: relative;
 }
 
@@ -33,24 +33,41 @@ body {
 }
 
 .slide {
+  .slide-icon {
+    >p {
+      margin: 0px;
+      margin-left: 10px;
+    }
+
+    >i {
+      transform: translateX(170px);
+      transition: all 1s;
+    }
+    margin-top: 20px;
+  }
+  position: fixed;
+  font-size: 30px;
   width: 100% * math.div(4, 12);
   transform: translateX(-75%);
   transition: all 1s;
-  padding: 10px;
-  height: 100vh;
+  padding: 30px;
+  padding-top: 0px;
+  height: 100%;
   z-index: 1;
   background-color: purple;
 }
 
 .slide:hover {
+  .slide-icon {
+    >i {
+      transform: translateX(0);
+    }
+  }
   transform: translateX(0);
-  padding-left: 10px;
 }
 
-
 .container {
-  position: fixed;
-  left: 100% * math.div(1, 12);
+  transform: translateX(100% * math.div(1, 11));
 }
 .container-navbar-search {
 
@@ -89,6 +106,15 @@ body {
   text-align: right;
 }
 
+.container-navbar-menu {
+  >button {
+    border: none;
+    background-color: $titleColor;
+  }
+  font-size: 20px;
+  display: none;
+}
+
 .container-box {
   box-shadow: inset 1px 2px 2px $borderColor;
   padding: 10px;
@@ -97,6 +123,7 @@ body {
 
 .container-box-flex {
   >div {
+    margin: 10px;
     padding: 10px;
     align-items: center;
     
@@ -106,7 +133,6 @@ body {
   }
   >div:nth-child(1) {
     @include box(cornflowerblue);
-    margin-left: 0px;
   }
   >div:nth-child(2) {
     @include box(green);
@@ -116,7 +142,6 @@ body {
   }
   >div:nth-child(4) {
     @include box(orange);
-    margin-right: 0px;
   }
 }
 
@@ -130,7 +155,6 @@ body {
     padding: 10px;
     background-color: $contentColor;
   }
-
   >div:nth-child(2) {
     background-color: $titleColor;
   }
@@ -168,4 +192,44 @@ body {
   margin-top: 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px $borderColor;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width : 768px) {
+  .slide {
+    padding: 5px;
+  }
+
+  .container-navbar {
+    >div {
+      display: none;
+    }
+
+    .container-navbar-menu {
+      display: block;
+      text-align: right;
+    }
+  }
+  .container-box-flex {
+    >div {
+      margin: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    display: block;
+  }
+
+  .container-box-content {
+    >div {
+      width: 100%;
+    }
+
+    >div:nth-child(2) {
+      margin-left: 0px;
+    }
+    display: block;
+  }
 }

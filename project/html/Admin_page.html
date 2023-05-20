@@ -12,49 +12,38 @@
 </head>
 <body>
   <div class="box row">
-    <div class="slide col-1">
-      <div class="slide-icon">
-        <div>
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div>
-          <span>Home</span>
-        </div>
+    <div class="slide">
+      <div class="slide-icon row">
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
       </div>
-      <div class="slide-icon">
-        <div>
-          <i class="fa-solid fa-headphones"></i>
-        </div>
-        <div>
-          <span>Services</span>
-        </div>
+      <div class="slide-icon row">
+        <i class="fa-solid fa-headphones"></i>
+        <p>Services</p>
       </div>
-      <div class="slide-icon">
-        <div>
-          <i class="fa-solid fa-flag"></i>
-        </div>
-        <div>
-          <span>Alerts</span>
-        </div>
+      <div class="slide-icon row">
+        <i class="fa-solid fa-flag"></i>
+        <p>Alerts</p>
       </div>
-      <div class="slide-icon">
-        <div>
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div>
-          <span>Stats</span>
-        </div>
+      <div class="slide-icon row">
+        <i class="fa-solid fa-chart-pie"></i>
+        <p>Stats</p>
       </div>
     </div>
     <div class="container col-11">
       <div class="container-navbar row">
-        <div class="container-navbar-search col-9">
+        <div class="container-navbar-search col-8">
           <input type="search" placeholder="Search"><button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="container-navbar-alert col-3">
+        <div class="container-navbar-alert col-4">
           <button><i class="fa-solid fa-bell"></i></button>
           <button><i class="fa-solid fa-envelope"></i></button>
           <span>hs Kang</span>
+        </div>
+        <div class="container-navbar-menu col-12">
+          <button>
+            <i class="fa-solid fa-list"></i>
+          </button>
         </div>
       </div>
       <div class="container-box">
@@ -128,6 +117,8 @@
       datasets: [{
         label: '# of Votes',
         data: [0, 10, 5, 3, 20, 30, 45],
+        fill : true,
+        backgroundColor : 'cornflowerblue',
         borderWidth: 1
       }]
     },
