@@ -66,8 +66,8 @@ div {
 .slide {
   position: fixed;
   font-size: 30px;
-  width: 33.3333333333%;
-  transform: translateX(-75%);
+  width: 300px;
+  transform: translateX(-200px);
   transition: all 1s;
   padding: 30px;
   padding-top: 0px;
@@ -83,8 +83,8 @@ div {
   margin-left: 10px;
 }
 .slide .slide-icon > i {
-  transform: translateX(170px);
-  transition: all 1s;
+  transform: translateX(200px);
+  transition: all 0.75s;
 }
 
 .slide:hover {
@@ -95,7 +95,8 @@ div {
 }
 
 .container {
-  transform: translateX(9.0909090909%);
+  width: calc(100% - 100px);
+  transform: translateX(100px);
 }
 
 .container-navbar-search {
@@ -231,9 +232,6 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .slide {
-    padding: 5px;
-  }
   .container-navbar > div {
     display: none;
   }
